@@ -1,0 +1,187 @@
+﻿#search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+    -moz-transform: translate(0px, -100%) scale(0, 0);
+    -o-transform: translate(0px, -100%) scale(0, 0);
+    -ms-transform: translate(0px, -100%) scale(0, 0);
+    transform: translate(0px, -100%) scale(0, 0);
+    opacity:0;
+    z-index:5;
+}
+
+#search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+    -o-transform: translate(0px, 0px) scale(1, 1);
+    -ms-transform: translate(0px, 0px) scale(1, 1);
+    transform: translate(0px, 0px) scale(1, 1);
+    opacity: 1;
+}
+
+input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+    input[type="search"]:focus{
+        border:none;
+    }
+
+.closeSearch {
+    position: fixed;
+    top: 200px;
+    right: 15px;
+    color: #fff;
+    background-color: transparent;
+    border:none;
+    opacity: 1;
+    padding: 10px 17px;
+    font-size: 44px;
+    z-index:5;
+}
+#searchResults {
+    background-color: #fefeff;
+    opacity: 0.95;
+    height: 600px; 
+    overflow-y: auto;
+}
+#searchResults::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+#searchResults::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+#searchResults::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #d33975;
+}
+
+.col-lg-3.col-md-6 {
+    position: unset;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+hgroup {
+    padding-left: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+    hgroup h1 {
+        font: 500 normal 1.625em "Roboto",Arial,Verdana,sans-serif;
+        color: #2a3644;
+        margin-top: 0;
+        line-height: 1.15;
+    }
+
+    hgroup h2.lead {
+        font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif;
+        color: #2a3644;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+.search-result .thumbnail {
+    border-radius: 0 !important;
+}
+
+.search-result:first-child {
+    margin-top: 0 !important;
+}
+
+.search-result {
+    margin-top: 20px;
+}
+
+    .search-result .col-md-2 {
+        border-right: 1px dotted #ccc;
+        min-height: 140px;
+    }
+
+    .search-result ul {
+        padding-left: 0 !important;
+        list-style: none;
+    }
+
+        .search-result ul li {
+            font: 400 normal .85em "Roboto",Arial,Verdana,sans-serif;
+            line-height: 30px;
+        }
+
+            .search-result ul li i {
+                padding-right: 5px;
+            }
+
+    .search-result .col-md-7 {
+        position: relative;
+    }
+
+    .search-result h3 {
+        font: 500 normal 1.375em "Roboto",Arial,Verdana,sans-serif;
+        margin-top: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+        .search-result h3 > a, .search-result i {
+            color: #248dc1 !important;
+        }
+
+    .search-result p {
+        font-family: "Poppins", sans-serif;
+        font-size:1.125em;
+    }
+
+    .search-result span.plus {
+        position: absolute;
+        left: 15px;
+        top: 70px;
+    }
+
+        .search-result span.plus a {
+            background-color: #d43b74;
+            padding: 5px;
+            color: #FFF;
+            font-size: 15px;
+        }
+
+            .search-result span.plus a:hover {
+                background-color: #414141;
+            }
+
+            .search-result span.plus a i {
+                color: #fff !important;
+            }
+
+    .search-result span.border {
+        display: block;
+        width: 97%;
+        margin: 0 15px;
+        border-bottom: 1px dotted #ccc;
+    }

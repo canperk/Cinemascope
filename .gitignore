@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/BilgeAdam.Horfin.Client/v15/Server/sqlite3
+/.vs/BilgeAdam.CinemaScope/DesignTimeBuild
+/.vs/BilgeAdam.CinemaScope/v16/Server/sqlite3
+/.vs/BilgeAdam.CinemaScope/v16
+/.vs/BilgeAdam.Horfin.Client/DesignTimeBuild
+/.vs/BilgeAdam.Horfin.Client/v15
+/.vs/BilgeAdam.Horfin.Client/v16/Server/sqlite3
+/.vs/BilgeAdam.Horfin.Client/v16
+/.vs
